@@ -14,14 +14,24 @@ h1 {
 */
 
 
+
 h1 {
     color: red;
 }
+
+/* can tag the same style multiple times - they stack, and the second overwrites the first*/
 
 .title {
     background-color: gray;
 }
 
-#important {
+.title {
+    color: blue;
+}
+
+/* can tag multiple id to have same style*/
+
+#important, #hello {
     color: yellow;
 }
+
