@@ -33,10 +33,13 @@ if (isMale == true) {
 
 while (age < 70) {
 
-    console.log("Your age is " + age );
-
+    console.log("Your age is " + age + " years old" );
     age = age + 1;
 
+}
+
+for (let age=30; age<32; age++) {
+    console.log("Your age is " + age + " years old" );
 }
 
 
@@ -49,8 +52,15 @@ function sayHello() {
 function showAge() {
     // Get the value from the input field of ID #user-input
     // Store this value in a variable called user_input
-    var user_input = document.getElementById("user-input").value
+    var user_input = document.getElementById("user-input").value;
     // Update the content for the HTML element with ID #header-age with
     // whatever the user_input varible contains
     document.getElementById("header-age").textContent = user_input
 }
+
+//function validateForm(){
+//var input=document.getElementById("user-email").value
+//     if (!input.includes("@")){
+//   return(false);
+//    else return(true);
+//}}
